@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 :root {
@@ -62,6 +62,7 @@ ul{
 
   /* logo-delivery-number */
   .logo-delivery-number{
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,6 +82,9 @@ color: var(--primary-text-color);
   }
 
   /* nav-bar */
+  .nav-bar{
+    height: 10vh;
+  }
   .nav-bar ul{
     display: flex;
     justify-content: flex-end;
@@ -94,6 +98,7 @@ color: var(--primary-text-color);
 
   /* main-container left-side and right side */
   .main-container{
+    height: calc(100vh - 20vh);
     display: flex;
     /* background-color: fuchsia; */
   }
@@ -103,6 +108,8 @@ color: var(--primary-text-color);
     display: flex;
     flex-direction: column;
     gap: 1em;
+    align-items: start;
+    justify-content: center;
 
   }
   .first-heading h2{
@@ -129,10 +136,35 @@ color: var(--primary-text-color);
 
  /* right-side */
  .right-side{
+  width: 50%;
   display: flex;
   justify-content: center;
+  align-items: start;
+  position: relative;
  }
 
+ .burger-container{
+  width: 53%;
+  position: absolute;
+  top: 20%;
+  z-index: 1;
+
+ }
+ .burger-container img{
+width: 100%;
+
+ }
+ .glass-container{
+  width: 22%;
+  position: absolute;
+  right: 17%;
+
+ }
+
+ .glass-container img{
+  width: 100%;
+  
+ }
 
  
 
