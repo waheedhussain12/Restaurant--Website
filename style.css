@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 :root {
@@ -32,20 +32,33 @@
     font-size: 1.5rem;
     font-weight: 500;
   }
-  p {
-    font-family: "Roboto", sans-serif;
+  /* p {
+    font-family: sans-serif;
     font-size: 1.25rem;
     color: var(--secondary-text-color);
     line-height: 1.8rem;
-  }
+  } */
 
   a {
     text-decoration: none;
     display: inline-block;
     color: var(--primary-text-color);
+    padding-inline: 0.5em;
   }
 ul{
   list-style: none;
+}
+.hover-link{
+  color: var(--primary-text-color);
+  transition: 0.3s ease-out;
+  
+  
+  
+}
+.hover-link:hover{
+  background-color: var(--primary-text-color);
+  color: #fff;
+  border-radius: 0.2em;
 }
   .container {
     max-width: 1180px;
@@ -72,14 +85,16 @@ ul{
   .logo img{
     width: 12vw;
   }
-  .logo-delivery-number h3{
+  .delivery-number h3{
 font-size: 1rem;
 color: var(--primary-text-color);
   }
-  .logo-delivery-number{
+  .delivery-number{
   display: flex;
   gap: 0.5em;
+  align-items: center;
   }
+
 
   /* nav-bar */
   .nav-bar{
@@ -92,7 +107,7 @@ color: var(--primary-text-color);
     
   }
   .nav-bar ul h2{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
   }
 
@@ -100,6 +115,7 @@ color: var(--primary-text-color);
   .main-container{
     height: calc(100vh - 20vh);
     display: flex;
+   
     /* background-color: fuchsia; */
   }
 /* left-side" */
@@ -110,6 +126,7 @@ color: var(--primary-text-color);
     gap: 1em;
     align-items: start;
     justify-content: center;
+    overflow: hidden;
 
   }
   .first-heading h2{
@@ -120,6 +137,8 @@ color: var(--primary-text-color);
     padding: 0.5em;
     border: 0.1em dashed  #3d2514;
   }
+
+  /* left side */
   .left-side-title{
     width: 80%;
   }
@@ -141,7 +160,10 @@ color: var(--primary-text-color);
   justify-content: center;
   align-items: start;
   position: relative;
+  /* overflow: hidden; */
+  
  }
+
 
  .burger-container{
   width: 53%;
@@ -154,6 +176,13 @@ color: var(--primary-text-color);
 width: 100%;
 
  }
+.shadow-burger{
+  position: absolute;
+  top: 96%;
+   right: 1%;
+   z-index: 3;
+}
+
  .glass-container{
   width: 22%;
   position: absolute;
@@ -165,7 +194,13 @@ width: 100%;
   width: 100%;
   
  }
+.shadow-glass{
+  position: absolute;
+ top: 98%;
+  right: 1%;
+  z-index: 3;
 
+}
  .fries-container{
    width: 40%;
    position: absolute;
@@ -176,29 +211,170 @@ width: 100%;
    width: 100%;
  }
 
+ .price-tag-container{
+  width: 40%;
+  position: absolute;
+  top: 42%;
+   left: 1%;
+   z-index: 4;
+ 
 
+ }
+ .price-tag-container img{
+  width: 100%;
+ }
 
+ /* card section */
+ .cards-section{
+  background-color: #fff;
+ }
 
+ .card-container{
+  padding: 2em;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+gap: 1.5em;
+  /* margin-block: 30px; */
+  flex-wrap: wrap;
+ }
 
+ .left-big-card{
+  width: 40%;
+  height: 55vh;
+background-image: url(./img/Burger-Image-card.png);
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 0.5em;
+ }
+ .left-big-card h2{
+  margin-top: 1em;
+  padding-inline: 1em;
+  font-size: 1rem;
+  color: #ffff;
+  font-weight: 500;
+ }
+ .left-big-card h1{
+  padding-inline: 1em;
+  font-size: 1.3rem;
+  color: #ffff;
+  font-weight: 700;
+ }
+ .half{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2em;
+ }
 
+ .right-card1{
+  height: 25vh;
+width: 100%;
+background-image: url(./img/burger-Image-card2.png);
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 0.5em;
+ }
 
+ 
+ .right-card1 h2{
+  margin-top: 1em;
+  padding-inline: 1em;
+  font-size: 1rem;
+  color: #ffff;
+  font-weight: 500;
+ }
+ .right-card1 h1{
+  padding-inline: 1em;
+  font-size: 1.3rem;
+  color: #ffff;
+  font-weight: 800;
+ }
 
+ .right-card2{
+  height: 25vh;
+width: 100%;
+background-image: url(./img/burger-Image-card3.png);
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 0.5em;
 
+ }
 
+ .right-card2 h2{
+  margin-top: 1em;
+  padding-inline: 1em;
+  font-size: 1rem;
+  color: #ffff;
+  font-weight: 500;
+ }
+ .right-card2 h1{
+  padding-inline: 1em;
+  font-size: 1.3rem;
+  color: #ffff;
+  font-weight: 800;
+ }
+.small-text-heading{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  padding-block: 1em;
+}
+ .btn{
 
+  background-color: #ffc657;
+  border: none;
+  width: 20%;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 1em;
+  text-align: center;
+  color: #3d2514;
+ }
+.text-heading h1{
+font-size: 3rem;
+font-weight: 800;
+}
+.text-pra p{
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 300;
+  padding-inline: 1em;
+}
+.three-burger-cards{
+  margin-block: 2em;
+  display: flex;
+  justify-content: space-evenly;
+ 
+}
+.card1 img{
+width: 100%;
+}
+.card1{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1em;
+}
+.card1 h1{
+  font-size: 1.5rem;
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.card1 p{
+  font-size: 0.7rem;
+  text-align: center;
+}
+.burger-btn{
+  width: 50%;
+  text-align: center;
+  background-color: #bf2222;
+  color: #fff;
+}
 
 
 
@@ -215,8 +391,26 @@ width: 100%;
 
 
  @media screen and (max-width: 360px) {
-  .main-container{
+  .nav-bar{
+    display: none;
+  }
+  .logo-delivery-number{
+    align-items: center;
+ flex-direction: column;
+  }
+  .logo img{
+  
+    width: 100%;
+  }
+
+  .delivery-number{
+    display: none;
+    align-items: center;
+    }
    
+
+
+  .main-container{
     display: flex;
     flex-direction: column;
     /* background-color: fuchsia; */
@@ -232,8 +426,8 @@ width: 100%;
 
   }
   .first-heading{
-    margin-top: 1em;
-    padding: 0.1em;
+    margin-top: 3em;
+    padding: 0.2em;
     text-align: center;
     border: 0.1em dashed  #3d2514;
   }
@@ -246,6 +440,106 @@ width: 100%;
     margin-top: 2em;
    
   }
+  .left-side-title{
+    width: 80%;
+  }
+  .left-side-subtitle {
+    width: 30%;
+   }
+
+
+   .burger-container{
+    width: 60%;
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+  
+   }
+   .shadow-burger{
+    position: absolute;
+    top: 96%;
+     right: 1%;
+     z-index: 3;
+  }
+  
+   .glass-container{
+    width: 19%;
+    position: absolute;
+    right: 13%;
+  
+   }
+   .shadow-glass{
+    position: absolute;
+   top: 98%;
+    right: 1%;
+    z-index: 3;
+  
+  }
+  .fries-container{
+    width: 40%;
+    position: absolute;
+    top: 4%;
+    left:4%;
+  }
+
+  .price-tag-container{
+    width: 20%;
+    display: none;
+    position: absolute;
+     z-index: 4;
+   
+  
+   }
+   .card-container{
+  display: flex;
+  padding: 0.2em;
+  flex-direction: column;
+  gap: 1em;
+    /* margin-block: 30px; */
+    flex-wrap: wrap;
+   }
+   .left-big-card{
+    width: 100%;
+   
+   }
+   
+.half{
+  width: 100%;
+}
+.btn{
+  width: 80%;
+ 
+}
+
+.text-heading h1{
+  font-size: 2rem;
+  font-weight: 600;
+  }
+.three-burger-cards{
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.card1{
+  width: 90%;
+}
+
+.card1 h1{
+  font-size: 1.2rem;
 
 }
+.card1 p{
+  font-size: 0.6rem;
+  text-align: center;
+}
+.burger-btn{
+  width: 100%;
+  text-align: center;
+}
+
+ }
+
+
+
  
