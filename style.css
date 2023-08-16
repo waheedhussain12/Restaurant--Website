@@ -397,12 +397,15 @@ flex-wrap: wrap;
 
 .heading-event-right-side h3{
   font-size: 1rem;
+  
 
 
 }
 .heading-event-right-side h1{
   font-size: 3rem;
   font-weight: 700;
+  text-align: center;
+ 
 
 }
 
@@ -471,13 +474,14 @@ font-weight: 900;
   background-image: url(./img/footer.png);
   background-size: cover;
   background-repeat: no-repeat;
-  /* width: 100%; */
+  width: 100%;
   height: 70vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* padding-block: em; */
 }
+
 .heading-icon{
   display: flex;
   align-items: center;
@@ -531,157 +535,6 @@ text-align: center;
 
 
 
-
-
- @media screen and (max-width: 460px) {
-  .nav-bar{
-    display: none;
-  }
-  .logo-delivery-number{
-    align-items: center;
- flex-direction: column;
-  }
-  .logo img{
-  
-    width: 100%;
-  }
-
-  .delivery-number{
-    display: none;
-    align-items: center;
-    }
-   
-
-
-  .main-container{
-    display: flex;
-    flex-direction: column;
-    /* background-color: fuchsia; */
-  }
-  .left-side{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    align-items: center;
-    justify-content: center;
-   
-
-  }
-  .first-heading{
-    margin-top: 3em;
-    padding: 0.2em;
-    text-align: center;
-    border: 0.1em dashed  #3d2514;
-  }
-  .first-heading h2{
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  .right-side{
-    width: 100%;
-    margin-top: 2em;
-   
-  }
-  .left-side-title{
-    width: 80%;
-  }
-  .left-side-subtitle {
-    width: 30%;
-   }
-
-
-   .burger-container{
-    width: 60%;
-    position: absolute;
-    top: 20%;
-    z-index: 1;
-  
-   }
-   .shadow-burger{
-    position: absolute;
-    top: 96%;
-     right: 1%;
-     z-index: 3;
-  }
-  
-   .glass-container{
-    width: 19%;
-    position: absolute;
-    right: 13%;
-  
-   }
-   .shadow-glass{
-    position: absolute;
-   top: 98%;
-    right: 1%;
-    z-index: 3;
-  
-  }
-  .fries-container{
-    width: 40%;
-    position: absolute;
-    top: 4%;
-    left:4%;
-  }
-
-  .price-tag-container{
-    width: 20%;
-    display: none;
-    position: absolute;
-     z-index: 4;
-   
-  
-   }
-   .card-container{
-  display: flex;
-  padding: 0.2em;
-  flex-direction: column;
-  gap: 1em;
-    /* margin-block: 30px; */
-    flex-wrap: wrap;
-   }
-   .left-big-card{
-    width: 100%;
-   
-   }
-   
-.half{
-  width: 100%;
-}
-.btn{
-  width: 80%;
- 
-}
-
-.text-heading h1{
-  font-size: 2rem;
-  font-weight: 600;
-  }
-.three-burger-cards{
-  flex-direction: column;
-  align-items: center;
-  gap: 2em;
-}
-
-.card1{
-  width: 90%;
-}
-
-.card1 h1{
-  font-size: 1.2rem;
-
-}
-.card1 p{
-  font-size: 0.6rem;
-  text-align: center;
-}
-.burger-btn{
-  width: 100%;
-  text-align: center;
-}
-
- }
 
 
 
