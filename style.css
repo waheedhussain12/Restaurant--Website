@@ -466,6 +466,63 @@ font-weight: 600;
 font-weight: 900;
 }
 
+.footer{
+  margin-top: 4em;
+  background-image: url(./img/footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* width: 100%; */
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-block: em; */
+}
+.heading-icon{
+  display: flex;
+  align-items: center;
+  justify-content:start;
+  gap: 0.5em;
+}
+.heading-icon h4{
+  font-size: 0.7rem;
+  color: #fff;
+  padding: 1em;
+  font-weight: 500;
+}
+.heading-icon i{
+  color: #fff;
+  font-size: 1.3em;
+ 
+ 
+}
+
+.footer-left{
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  width: 50%;
+
+}
+.burger-logo{
+width: 50%;
+}
+
+.burger-logo img{
+  width: 100%;
+  color: #fff;
+}
+.footer p{
+color: #fff;
+font-size: 0.8rem;
+text-align: center;
+}
+
+.footer-right{
+/* width: 50%; */
+}
+
+
 
 
 
