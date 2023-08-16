@@ -376,6 +376,95 @@ width: 100%;
   color: #fff;
 }
 
+.upcoming-event-card{
+  margin-top: 6em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 22px 28px 20px -5px rgba(0,0,0,0.1);
+  
+  
+}
+.upcoming-event-rigt{
+width: 50%;
+display: flex;
+flex-direction: column;
+gap: 2em;
+padding: 2em;
+flex-wrap: wrap;
+}
+
+.heading-event-right-side h3{
+  font-size: 1rem;
+
+
+}
+.heading-event-right-side h1{
+  font-size: 3rem;
+  font-weight: 700;
+
+}
+
+.upcoming-event-rigt p{
+font-size: 1rem;
+text-align: center;
+
+}
+.upcoming-event-left-side {
+  width: 50%;
+}
+.upcoming-event-left-side img{
+  width: 100%;
+
+}
+
+.form{
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.heading-event-right-side{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1em;
+}
+.heading-event-right-side h3{
+font-weight: 600;
+}
+.heading-event-right-side h1{
+  font-weight: 800;
+}
+
+.name-fields{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  padding: 3em;
+  
+}
+
+.text-form{
+  /* border: none; */
+  padding: 1em;
+  width: 25vw;
+}
+
+.left-side-name li{
+  margin-top: 2em;
+}
+.form-btn{
+  color: #fff;
+  background-color: #bf2222;
+font-weight: 900;
+}
 
 
 
@@ -387,10 +476,7 @@ width: 100%;
 
 
 
-
-
-
- @media screen and (max-width: 360px) {
+ @media screen and (max-width: 460px) {
   .nav-bar{
     display: none;
   }
